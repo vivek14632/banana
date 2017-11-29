@@ -38,7 +38,7 @@ function (angular, app, _, $, kbn) {
         {title:'Queries', src:'app/partials/querySelect.html'}
       ],
       status  : "Stable",
-      description : "Displays the results of a Solr as a pie chart"
+      description : "Displays the results of a Solr facet as a pie chart"
     };
 
     // Set and populate defaults
@@ -65,7 +65,7 @@ function (angular, app, _, $, kbn) {
       labels  : true,
       logAxis : false,
       arrangement : 'horizontal',
-      chart       : 'bar',
+      chart       : 'pie',
       counter_pos : 'above',
       exportSize : 10000,
       lastColor : '',
